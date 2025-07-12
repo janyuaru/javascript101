@@ -25,3 +25,5 @@ function correct(string)
 }
 
 console.log(correct('PAR15'))
+console.log(correct('L0ND0N'))
+console.log(correct('51NGAP0RE'))
