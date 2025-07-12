@@ -8,20 +8,19 @@ The test cases contain numbers only by mistake.*/
 
 function correct(string)
 {
+	return string.split('').map(string => {
+	if (string == '5') {
+		return 'S'
+	}
+	if (string == '0') {
+		return 'O'
+	}
+	if (string == '1') {
+		return 'I'
+	}
 	return string
-    .split('').map(string => {
-    if (string == '5') {
-      return 'S'
-    }
-    if (string == '0') {
-      return 'O'
-    }
-    if (string == '1') {
-      return 'I'
-    }
-    return string
-  })
-  .join('')
+	})
+	.join('')
 }
 
 console.log(correct('PAR15'))
